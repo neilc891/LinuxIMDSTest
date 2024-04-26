@@ -15,7 +15,7 @@ from azure.core.exceptions import HttpResponseError
 from azure.identity import DefaultAzureCredential
 from azure.monitor.ingestion import LogsIngestionClient
  
-endpoint = os.environ['MigrationTestLinux']
+endpoint = os.environ['https://migrationtestlinux-cn6u.westeurope-1.ingest.monitor.azure.com']
 credential = DefaultAzureCredential()
  
 client = LogsIngestionClient(endpoint=endpoint, credential=credential, logging_enable=True)
